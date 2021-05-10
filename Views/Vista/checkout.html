@@ -1,0 +1,324 @@
+<main>
+
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <i class="fa fa-envelope"></i>support@email.com
+                </div>
+                <div class="col-sm-6">
+                    <i class="fa fa-phone-alt"></i>+012-345-6789
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="navbar-nav mr-auto">
+                    <a href="http://127.0.0.1:9000/Vista/principal"
+                        class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Products</a>
+                    <a href="#" class="nav-item nav-link">Product Detail</a>
+                    <a href="#" class="nav-item nav-link">Cart</a>
+                    <a href="#" class="nav-item nav-link">Checkout</a>
+                    <a href="#" class="nav-item nav-link">My Account</a>
+                    <a href="#" class="nav-link dropdown-toggle">More Pages</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"
+                            data-toggle="dropdown">User Account</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <h1>EStore</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="user">
+                        <a href="#" class="btn">
+                            <i class="fa fa-heart"></i>
+                            <span>(0)</span>
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a
+                    href="http://127.0.0.1:9000/Vista/principal">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Products</a></li>
+            <li class="breadcrumb-item active">Checkout</li>
+        </ul>
+    </div>
+
+
+    <div class="checkout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="checkout-inner">
+
+                        <form name="frmContacto" method="POST" action="../Servidor/index.php">
+                                <h2>Insertar Cliente</h2>
+
+                                <div class="form-group">
+                                    <label for="txtCedula">Cedula: </label>
+                                    <input type="text" name="txtCedula"
+                                        id="txtCedula"
+                                        class="form-control" placeholder="Ingrese cedula">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtNombre">Nombre: </label>
+                                    <input type="text" name="txtNombre"
+                                        id="txtNombre"
+                                        class="form-control" placeholder="Ingrese nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtApellido">Apellidos: </label>
+                                    <input type="text" name="txtApellido"
+                                        id="txtApellido"
+                                        class="form-control" placeholder="Ingrese apellidos">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtTelefono">Numero de Teléfono: </label>
+                                    <input type="text" name="txtTel"
+                                        id="txtTel"
+                                        class="form-control" placeholder="Ingrese numero de teléfono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCorreo">Correo:</label>
+                                    <input type="text" name="txtCorreo"
+                                        id="txtCorreo"
+                                        class="form-control" placeholder="Ingrese Correo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCiudad">Ciudad:</label>
+                                    <input type="text" name="txtCity"
+                                        id="txtCity"
+                                        class="form-control" placeholder="Ingrese ciudad">
+                                </div>
+                                <a onclick="registrarContacto()" class="btn btn-success btn-block">Agregar Usuario</a>
+                        </form>
+
+                    </div>
+                </div>
+
+                
+
+                <div class="col-lg-4">
+                    <div class="checkout-inner">
+                        <div class="checkout-summary">
+                            <h1>Cart Total</h1>
+                            <p>Product Name<span>$99</span></p>
+                            <p class="sub-total">Sub Total<span>$99</span></p>
+                            <p class="ship-cost">Shipping Cost<span>$1</span></p>
+                            <h2>Grand Total<span>$100</span></h2>
+                        </div>
+
+                        <div class="checkout-payment">
+                            <div class="payment-methods">
+                                <h1>Payment Methods</h1>
+                                <div class="payment-method">
+                                    <div class="custom-control
+                                        custom-radio">
+                                        <label class="custom-control-label">Paypal</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control
+                                        custom-radio">
+                                        <label class="custom-control-label">Payoneer</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control
+                                        custom-radio">
+                                        <label class="custom-control-label">Check Payment</label>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control
+                                        custom-radio">
+                                        <label class="custom-control-label">Direct Bank Transfer</label>
+                                    </div>
+
+                                </div>
+                                <div class="payment-method">
+                                    <div class="custom-control
+                                        custom-radio">
+                                        <label class="custom-control-label">Cash on Delivery</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-sm-8">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-dark text-center">
+                                <tr>
+                                    <th>Cedula</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Correo</th>
+                                    <th>Celular</th>
+                                    <th>Ciudad</th>
+                                    <th>Herramientas</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaContactos" style="background-color: white;">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="popup">
+                    <div class="popup-content">
+                        <img src="http://127.0.0.1:9000/img/cancel.png" alt="Close" class="close">
+                        <div class="form-group">
+                            <label for="txtCedula">Cedula: </label>
+                            <input type="text" name="tCedula"
+                                id="tCedula"
+                                class="form-control" placeholder="Ingrese cedula">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtNombre">Nombre: </label>
+                            <input type="text" name="tNombre"
+                                id="tNombre"
+                                class="form-control" placeholder="Ingrese nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtApellido">Apellidos: </label>
+                            <input type="text" name="tApellido"
+                                id="tApellido"
+                                class="form-control" placeholder="Ingrese apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtTelefono">Numero de Teléfono: </label>
+                            <input type="text" name="tTel"
+                                id="tTel"
+                                class="form-control" placeholder="Ingrese numero de teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCorreo">Correo:</label>
+                            <input type="text" name="tCorreo"
+                                id="tCorreo"
+                                class="form-control" placeholder="Ingrese Correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCiudad">Ciudad:</label>
+                            <input type="text" name="tCity"
+                                id="tCity"
+                                class="form-control" placeholder="Ingrese ciudad">
+                        </div>
+                        <a onclick="edit()" class="btn btn-success btn-block">Editar Usuario</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+    </div>
+    <script>
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none"
+        })
+    </script>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>123 E Store,
+                                Los Angeles, USA</p>
+                            <p><i class="fa fa-envelope"></i>email@example.com</p>
+                            <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Follow Us</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Company Info</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Purchase Info</h2>
+                        <ul>
+                            <li><a href="#">Pyament Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>We Accept:</h2>
+                        <img
+                            src="http://127.0.0.1:9000/img/payment-method.png"
+                            alt="Payment Method" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
